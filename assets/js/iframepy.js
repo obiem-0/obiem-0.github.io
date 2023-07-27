@@ -1,13 +1,10 @@
 $(function () {
 console.log("hello!")
-}
-
-/*
 
   var iframepy = $('#iframe-id')[0].contentWindow.document
 
   iframepy.querySelector('#menu-panel-wrapper').remove() 
-  iframepy.querySelector('#main-panel').style.top = 0
+ /* iframepy.querySelector('#main-panel').style.top = 0
   iframepy.querySelector('button[class="bp3-button bp3-minimal jp-ToolbarButtonComponent minimal jp-Button"]').hide()
   iframepy.querySelector('button[data-command="kernelmenu:interrupt"]').show()
   iframepy.querySelector('button[data-command="runmenu:run"]').show()
@@ -16,4 +13,4 @@ console.log("hello!")
 
 
 */
-)
+})
