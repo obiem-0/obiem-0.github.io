@@ -20167,9 +20167,5 @@ ul {
 }
 
 .code_section{
-    height: 800px;
+    height: 400px;
     }
-    
-    .code_section > #menu-panel-wrapper {
-        display: none;    
-        }
