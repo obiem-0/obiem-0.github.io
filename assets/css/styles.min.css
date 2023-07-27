@@ -20169,3 +20169,7 @@ ul {
 .code_section{
     height: 800px;
     }
+    
+    .code_section > #menu-panel-wrapper {
+        display: none;    
+        }
