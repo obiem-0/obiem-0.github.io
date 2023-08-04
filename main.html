@@ -206,10 +206,11 @@
 
 
   <script>
+      console.log("hi")
 
     w3.includeHTML();
     function rep() {
-      
+      console.log("hello")
       document.getElementById('template_here').outerHTML =  '<span id="template_here" w3-include-html="../index.html"></span>' ;
                   window.location.reload()
           }
