@@ -47,7 +47,7 @@
               </a>
             </li>
  <li class="sidebar-item">
-              <a class="sidebar-link" onclick="rep()"  aria-expanded="false">
+              <a class="sidebar-link" onclick="rep()" id="one"  aria-expanded="false">
                 
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
@@ -199,7 +199,7 @@
   <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/sidebarmenu.js"></script>
   <script src="./assets/js/app.min.js"></script>
-  <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <!-- <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script> -->
   <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="./assets/js/dashboard.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -209,9 +209,14 @@
       console.log("hi")
 
     w3.includeHTML();
-    function rep() {
+    function rep(clicked) {
       console.log("hello")
       document.getElementById('template_here').outerHTML =  '<span id="template_here" w3-include-html="../index.html"></span>' ;
+
+const exampleAttr = clicked.getAttribute("id");
+console.log(exampleAttr)
+
+
                   window.location.reload();
           }
    
