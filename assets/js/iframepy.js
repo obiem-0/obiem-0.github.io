@@ -2,7 +2,7 @@ $(function () {
 console.log("hello!")
 
   var iframepy = $("#iframe-id").contents()
-  //$('iframepy').find('button[class="bp3-button bp3-minimal jp-ToolbarButtonComponent minimal jp-Button"]').hide();
+  $('iframepy').find('button[class="bp3-button bp3-minimal jp-ToolbarButtonComponent minimal jp-Button"]').hide();
 
 
   //iframepy.querySelector('#menu-panel-wrapper').remove() 
