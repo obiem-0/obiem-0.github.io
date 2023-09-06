@@ -1,11 +1,12 @@
-///////////////
+///////////////HEAD COMPONENT
 class Head extends HTMLElement {
     constructor() {
       super();
     }
 
     connectedCallback() {
-        this.innerHTML = `
+
+        this.outerHTML = `
       
         <head>
         <meta charset="utf-8">
@@ -13,7 +14,14 @@ class Head extends HTMLElement {
         <title>Chukwubuikem Emuwa</title>
         <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
         <link rel="stylesheet" href="../assets/css/styles.min.css" />
+
         <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/js/app.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/sidebarmenu.js"></script>
+<script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+
       </head>
 
       `
@@ -21,151 +29,165 @@ class Head extends HTMLElement {
 
 }
 
+customElements.define('head-comp', Head); 
 
 
-
-/////////////
-class Header extends HTMLElement {
+////////SIDEBAR
+class Sidebar extends HTMLElement {
     constructor() {
       super();
     }
-  
+
     connectedCallback() {
+        this.innerHTML = `
+      
+        <aside class="left-sidebar">
+    
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="../html/index.html" class="text-nowrap logo-img">
+              <span class="hide-menu">Chukwubuikem Emuwa</span>
+              <!--<img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />-->
+            </a>
+            <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-8"></i>
+            </div>
+          </div>
+         
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+            <ul id="sidebarnav">
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">Home</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/index.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-layout-dashboard"></i>
+                  </span>
+                  <span class="hide-menu">Dashboard</span>
+                </a>
+              </li>
+        <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/aboutme.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-layout-dashboard"></i>
+                  </span>
+                  <span class="hide-menu">About Me</span>
+                </a>
+              </li>
+        
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../jup_demo/lab/index.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-layout-dashboard"></i>
+                  </span>
+                  <span class="hide-menu">Test</span>
+                </a>
+              </li>
+        
+     
+        <!--
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">UI COMPONENTS</span>
+              </li>
+     
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-article"></i>
+                  </span>
+                  <span class="hide-menu">Buttons</span>
+                </a>
+              </li>
+     
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-alert-circle"></i>
+                  </span>
+                  <span class="hide-menu">Alerts</span>
+                </a>
+              </li>
+     
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-cards"></i>
+                  </span>
+                  <span class="hide-menu">Card</span>
+                </a>
+              </li>
+     
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-file-description"></i>
+                  </span>
+                  <span class="hide-menu">Forms</span>
+                </a>
+              </li>
+     
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-typography"></i>
+                  </span>
+                  <span class="hide-menu">Typography</span>
+                </a>
+              </li>
+                        
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">EXTRA</span>
+              </li>
+     
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-mood-happy"></i>
+                  </span>
+                  <span class="hide-menu">Icons</span>
+                </a>
+              </li>
+     
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../sample-page.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Sample Page</span>
+                </a>
+              </li>
+     
+            -->
+     
+            
+            </ul>
+          </nav>
+        </div>
+     
+        </aside>
+
+      `
+    }
+
+}
+customElements.define('sidebar-component', Sidebar);
+
+/////////////HEADER
+class Header extends HTMLElement {
+    constructor() {
+      super();
+    };
+
+   
+
+    connectedCallback() {
+
    this.outerHTML = `
 
-
-
-   <aside class="left-sidebar">
-    
-   <div>
-     <div class="brand-logo d-flex align-items-center justify-content-between">
-       <a href="../html/index.html" class="text-nowrap logo-img">
-         <span class="hide-menu">Chukwubuikem Emuwa</span>
-         <!--<img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />-->
-       </a>
-       <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-         <i class="ti ti-x fs-8"></i>
-       </div>
-     </div>
-    
-     <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
-       <ul id="sidebarnav">
-         <li class="nav-small-cap">
-           <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-           <span class="hide-menu">Home</span>
-         </li>
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="../html/index.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-layout-dashboard"></i>
-             </span>
-             <span class="hide-menu">Dashboard</span>
-           </a>
-         </li>
-   <li class="sidebar-item">
-           <a class="sidebar-link" href="../html/aboutme.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-layout-dashboard"></i>
-             </span>
-             <span class="hide-menu">About Me</span>
-           </a>
-         </li>
-   
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="../jup_demo/lab/index.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-layout-dashboard"></i>
-             </span>
-             <span class="hide-menu">Test</span>
-           </a>
-         </li>
-   
-
-   <!--
-         <li class="nav-small-cap">
-           <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-           <span class="hide-menu">UI COMPONENTS</span>
-         </li>
-
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-article"></i>
-             </span>
-             <span class="hide-menu">Buttons</span>
-           </a>
-         </li>
-
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-alert-circle"></i>
-             </span>
-             <span class="hide-menu">Alerts</span>
-           </a>
-         </li>
-
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-cards"></i>
-             </span>
-             <span class="hide-menu">Card</span>
-           </a>
-         </li>
-
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-file-description"></i>
-             </span>
-             <span class="hide-menu">Forms</span>
-           </a>
-         </li>
-
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-typography"></i>
-             </span>
-             <span class="hide-menu">Typography</span>
-           </a>
-         </li>
-                   
-         <li class="nav-small-cap">
-           <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-           <span class="hide-menu">EXTRA</span>
-         </li>
-
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-mood-happy"></i>
-             </span>
-             <span class="hide-menu">Icons</span>
-           </a>
-         </li>
-
-         <li class="sidebar-item">
-           <a class="sidebar-link" href="../sample-page.html" aria-expanded="false">
-             <span>
-               <i class="ti ti-aperture"></i>
-             </span>
-             <span class="hide-menu">Sample Page</span>
-           </a>
-         </li>
-
-       -->
-
-       
-       </ul>
-     </nav>
-   </div>
-
-   </aside>
-   
-   
-   <!--  Header Start -->
    <header class="app-header">
    <nav class="navbar navbar-expand-lg navbar-light">
      <ul class="navbar-nav">
@@ -217,19 +239,64 @@ class Header extends HTMLElement {
        </ul>
      </div>
    </nav>
+
    </header>
-   
-   
-   <!--  Header End -->
-    
+
 `;      
 //const shadowRoot = this.attachShadow({ mode: 'closed' });
 
       //shadowRoot.appendChild(headerTemplate.content);
     }
   }
+
+customElements.define('header-component', Header);
+
+
+///////// CONTAINER
+class Whole extends HTMLElement {
+    constructor() {
+        super();
+      };
   
-/////////////
+     
+  
+      connectedCallback() {
+  
+       var abc =   document.body.getElementsByTagName('whole-comp')[0].innerHTML ;
+       console.log(abc)
+  
+  
+     this.innerHTML = `
+
+ <sidebar-component></sidebar-component>
+
+   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+
+        <div class="body-wrapper">
+        <header-component></header-component>
+
+
+        <div class="container-fluid">
+
+        ${abc}
+     
+           </div>
+           </div>
+
+        </div>
+
+     `;   
+      }
+
+}
+
+customElements.define('whole-comp', Whole);
+
+
+
+  
+///////////// FOOTER
 class Footer extends HTMLElement {
     constructor() {
       super();
@@ -255,9 +322,4 @@ class Footer extends HTMLElement {
 `;      
     }
   }
-
-customElements.define('head-comp', Head); 
-customElements.define('header-component', Header);
 customElements.define('footer-component', Footer);
-
-  //customElements.define('sidebar', Sidebar);
