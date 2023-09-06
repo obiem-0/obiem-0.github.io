@@ -263,7 +263,7 @@ class Whole extends HTMLElement {
       connectedCallback() {
   
        var abc =   document.body.getElementsByTagName('whole-comp')[0].innerHTML ;
-       console.log(abc)
+       console.log('1223',abc)
   
   
      this.innerHTML = `
