@@ -268,12 +268,13 @@ class Whole extends HTMLElement {
   
      this.innerHTML = `
 
- <sidebar-component></sidebar-component>
+     <sidebar-component></sidebar-component>
 
    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
         data-sidebar-position="fixed" data-header-position="fixed">
 
         <div class="body-wrapper">
+
         <header-component></header-component>
 
 
@@ -291,7 +292,7 @@ class Whole extends HTMLElement {
 
 }
 
-customElements.define('whole-comp', Whole);
+customElements.define('whole-component', Whole);
 
 
 
