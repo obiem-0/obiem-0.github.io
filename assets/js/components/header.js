@@ -318,8 +318,8 @@ class Footer extends HTMLElement {
 <a href="https://github.com/obiem" target="_blank" class="pe-1 text-primary text-decoration-underline"> Github</a>
 
 </p>
-
 </div>
+
 <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
 <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/sidebarmenu.js"></script>
