@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="../assets/js/components/header.js" type="text/javascript" defer></script>
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/sidebarmenu.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+
+</head>
+
+<head-comp></head-comp>
+
+<body>
+  <whole-comp>
+    <div class="card">
+
+
+                    <div class="card-body">
+            <h5 class="card-title fw-semibold mb-4">Sample Page</h5>
+            <p class="mb-0">This is a sample page </p>
+          </div>
+
+    <footer-component></footer-component>
+
+  </div>
+  
+</whole-comp>
+
+</body>
+
+</html>
