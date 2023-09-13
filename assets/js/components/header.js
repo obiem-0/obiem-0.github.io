@@ -315,7 +315,7 @@ class Footer extends HTMLElement {
 <a href="https://www.linkedin.com/in/obi-emuwa" target="_blank" class="pe-1 text-primary text-decoration-underline"> Linkedin</a>,
 <a href="https://discordapp.com/users/emuwa.obi" target="_blank" class="pe-1 text-primary text-decoration-underline"> Discord</a>,
 <a href="mailto:emuwa.obi@gmail.com" class="pe-1 text-primary text-decoration-underline"> Email </a>
-or <a href="https://github.com/obiem" target="_blank" class="pe-1 text-primary text-decoration-underline"> Github </a>
+<span> or </span><a href="https://github.com/obiem" target="_blank" class="pe-1 text-primary text-decoration-underline"> Github</a>
 
 </p>
 
