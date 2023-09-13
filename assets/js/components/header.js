@@ -60,6 +60,8 @@ class Sidebar extends HTMLElement {
                 <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                 <span class="hide-menu">Home</span>
               </li>
+
+              <!--
               <li class="sidebar-item">
                 <a class="sidebar-link" href="../index.html" aria-expanded="false">
                   <span>
@@ -68,6 +70,9 @@ class Sidebar extends HTMLElement {
                   <span class="hide-menu">Dashboard</span>
                 </a>
               </li>
+              -->
+
+              
         <li class="sidebar-item">
                 <a class="sidebar-link" href="../html/aboutme.html" aria-expanded="false">
                   <span>
