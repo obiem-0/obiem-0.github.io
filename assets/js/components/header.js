@@ -76,7 +76,8 @@ class Sidebar extends HTMLElement {
                   <span class="hide-menu">About Me</span>
                 </a>
               </li>
-        
+              
+        <!--
               <li class="sidebar-item">
                 <a class="sidebar-link" href="../jup_demo/lab/index.html" aria-expanded="false">
                   <span>
@@ -85,7 +86,7 @@ class Sidebar extends HTMLElement {
                   <span class="hide-menu">Test</span>
                 </a>
               </li>
-        
+        -->
      
         <!--
               <li class="nav-small-cap">
