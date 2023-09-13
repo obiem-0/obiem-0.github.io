@@ -94,7 +94,7 @@ class Sidebar extends HTMLElement {
               </li>
      
               <li class="sidebar-item">
-                <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+                <a class="sidebar-link" href="../ui-buttons.html" aria-expanded="false">
                   <span>
                     <i class="ti ti-article"></i>
                   </span>
@@ -103,7 +103,7 @@ class Sidebar extends HTMLElement {
               </li>
      
               <li class="sidebar-item">
-                <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                <a class="sidebar-link" href="../ui-alerts.html" aria-expanded="false">
                   <span>
                     <i class="ti ti-alert-circle"></i>
                   </span>
@@ -112,7 +112,7 @@ class Sidebar extends HTMLElement {
               </li>
      
               <li class="sidebar-item">
-                <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+                <a class="sidebar-link" href="../ui-card.html" aria-expanded="false">
                   <span>
                     <i class="ti ti-cards"></i>
                   </span>
@@ -121,7 +121,7 @@ class Sidebar extends HTMLElement {
               </li>
      
               <li class="sidebar-item">
-                <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+                <a class="sidebar-link" href="../ui-forms.html" aria-expanded="false">
                   <span>
                     <i class="ti ti-file-description"></i>
                   </span>
@@ -130,7 +130,7 @@ class Sidebar extends HTMLElement {
               </li>
      
               <li class="sidebar-item">
-                <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+                <a class="sidebar-link" href="../ui-typography.html" aria-expanded="false">
                   <span>
                     <i class="ti ti-typography"></i>
                   </span>
@@ -144,7 +144,7 @@ class Sidebar extends HTMLElement {
               </li>
      
               <li class="sidebar-item">
-                <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
+                <a class="sidebar-link" href="../icon-tabler.html" aria-expanded="false">
                   <span>
                     <i class="ti ti-mood-happy"></i>
                   </span>
@@ -262,7 +262,7 @@ class Whole extends HTMLElement {
   
       connectedCallback() {
   
-       var abc =   document.body.getElementsByTagName('whole-comp')[0].innerHTML ;
+       var abc =   document.body.getElementsByTagName('whole-component')[0].innerHTML ;
        console.log('1223',abc)
   
   

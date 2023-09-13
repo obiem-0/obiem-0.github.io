@@ -4,11 +4,71 @@ $(function () {
   // =====================================
   // Profit
   // =====================================
+  
   var chart = {
+
+
+    xaxis: {
+      
+      type: "category", /// the groups for the skills
+      categories: [
+        "Software Development", 
+        "Data Analysis", 
+     //   "Project Management", 
+        "Baking",
+        "Handling Complex Datasets",
+      //  "Data Engineering and Database knowledge (MySQL, Azure (Cosmos, SQL and Databricks) )"
+        /*
+• Data Analysis and Visualisation (Python, PowerBI, Excel, Tableau, Looker, Google Analytics)
+• Integrations using REST APIs
+• Project Coordination
+• App Development using Java, Javascript, HTML and CSS
+• QA testing using JUnit, Selenium and Low-code Automation Tools (PowerAutomate, PowerApps)
+• Jira and Confluence including customisation with Groovy Scripts
+*/
+      ],
+      labels: {
+        style: { cssClass: "grey--text lighten-2--text fill-color" },
+      },
+    },
+
+
+    yaxis: {
+      show: true,
+      min: 0,
+      max: 100,
+      tickAmount: 5,
+      labels: {
+        style: {
+          cssClass: "grey--text lighten-2--text fill-color",
+        },
+      },
+    },
+
+
     series: [
-      { name: "Earnings this month:", data: [355, 390, 300, 350, 390, 180, 355, 390] },
-      { name: "Expense this month:", data: [280, 250, 325, 215, 250, 310, 280, 250] },
+     // { name: "Earnings this month:", data: [null ,70, null, null] }, // this has to be the same number of categories
+      { 
+        data: [ 
+          60, 
+          80, 
+          70, 
+          90
+        ]
+
+        }, // this has to be the same number of categories
+
+        {
+       data: [ 
+     "eight",
+    50,
+      70, 
+      90
+     // '<li> eight </li><li> nine </li><li> 20 </li>'
+      ] 
+      }
     ],
+
 
     chart: {
       type: "bar",
@@ -26,13 +86,14 @@ $(function () {
 
     plotOptions: {
       bar: {
-        horizontal: false,
+        horizontal: false, // make it horizontal for easier comparision
         columnWidth: "35%",
         borderRadius: [6],
         borderRadiusApplication: 'end',
         borderRadiusWhenStacked: 'all'
       },
     },
+
     markers: { size: 0 },
 
     dataLabels: {
@@ -55,26 +116,8 @@ $(function () {
       },
     },
 
-    xaxis: {
-      type: "category",
-      categories: ["16/08", "17/08", "18/08", "19/08", "20/08", "21/08", "22/08", "23/08"],
-      labels: {
-        style: { cssClass: "grey--text lighten-2--text fill-color" },
-      },
-    },
 
 
-    yaxis: {
-      show: true,
-      min: 0,
-      max: 400,
-      tickAmount: 4,
-      labels: {
-        style: {
-          cssClass: "grey--text lighten-2--text fill-color",
-        },
-      },
-    },
     stroke: {
       show: true,
       width: 3,
@@ -82,8 +125,21 @@ $(function () {
       colors: ["transparent"],
     },
 
+  
 
-    tooltip: { theme: "light" },
+    tooltip: { 
+      theme: "light",
+      custom: function(
+        {series, seriesIndex, dataPointIndex, xaxis}
+
+        ) {
+        return '<div class="arrow_box">' +
+         '<span>' + series[seriesIndex+1][dataPointIndex] + '</span> hi '
+         + series
+     
+      }
+    
+    },
 
     responsive: [
       {
