@@ -45,7 +45,7 @@ class Sidebar extends HTMLElement {
     
         <div>
           <div class="brand-logo d-flex align-items-center justify-content-between">
-            <a href="../html/index.html" class="text-nowrap logo-img">
+            <a href="/" class="text-nowrap logo-img">
               <span class="hide-menu">Chukwubuikem Emuwa</span>
               <!--<img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />-->
             </a>
