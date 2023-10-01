@@ -218,7 +218,7 @@ $(function () {
 
 
   // =====================================
-  // Earning
+  // Efficiency
   // =====================================
   var earning = {
     chart: {
@@ -234,7 +234,7 @@ $(function () {
     },
     series: [
       {
-        name: "Earnings",
+        name: "Efficiency",
         color: "#49BEFF",
         data: [65, 68, 73, 65, 71, 75, 78, 80],
       },
