@@ -8,6 +8,9 @@ const BlankLayout = Loadable(lazy(() => import('../layouts/blank/BlankLayout')))
 
 /* ****Pages***** */
 const Dashboard = Loadable(lazy(() => import('../views/dashboard/Dashboard')))
+const AboutMe = Loadable(lazy(() => import('../views/aboutme/AboutMe')))
+const RecipeRecom = Loadable(lazy(() => import('../views/otherpages/RecipeRecom')))
+const RoleDescription = Loadable(lazy(() => import('../views/roledescription/RoleDescription')))
 const SamplePage = Loadable(lazy(() => import('../views/sample-page/SamplePage')))
 const Icons = Loadable(lazy(() => import('../views/icons/Icons')))
 const TypographyPage = Loadable(lazy(() => import('../views/utilities/TypographyPage')))
@@ -23,6 +26,9 @@ const Router = [
     children: [
       { path: '/', element: <Navigate to="/dashboard" /> },
       { path: '/dashboard', exact: true, element: <Dashboard /> },
+      { path: '/aboutme', exact: true, element: <AboutMe /> },
+      { path: '/otherpages', exact: true, element: <RecipeRecom /> },
+      { path: '/roledescription', exact: true, element: <RoleDescription /> },
       { path: '/sample-page', exact: true, element: <SamplePage /> },
       { path: '/icons', exact: true, element: <Icons /> },
       { path: '/ui/typography', exact: true, element: <TypographyPage /> },

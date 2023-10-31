@@ -67,7 +67,20 @@ const SalesOverview = () => {
             tickAmount: 4,
         },
         xaxis: {
-            categories: ['16/08', '17/08', '18/08', '19/08', '20/08', '21/08', '22/08', '23/08'],
+            categories: [
+                "Software Development", 
+            "Data Analysis and Visualisation ", 
+            "Project Management", 
+            "Handling Complex Datasets",
+            "MySQL, Azure"
+            /*
+    • Data Analysis(Python, PowerBI, Excel, Tableau, Looker, Google Analytics)
+    • Integrations using REST APIs
+    • Project Coordination
+    • App Development using Java, Javascript, HTML and CSS
+    • QA testing using JUnit, Selenium and Low-code Automation Tools (PowerAutomate, PowerApps)
+    • Jira and Confluence including customisation with Groovy Scripts
+    */],
             axisBorder: {
                 show: false,
             },
@@ -79,18 +92,18 @@ const SalesOverview = () => {
     };
     const seriescolumnchart = [
         {
-            name: 'Eanings this month',
-            data: [355, 390, 300, 350, 390, 180, 355, 390],
+            name: 'Earnings this month',
+            data: [355, 390, 300, 350, 390],
         },
         {
             name: 'Expense this month',
-            data: [280, 250, 325, 215, 250, 310, 280, 250],
+            data: [280, 250, 325, 215, 250],
         },
     ];
 
     return (
 
-        <DashboardCard title="Sales Overview" action={
+        <DashboardCard title="Proficiency" /* action={
             <Select
                 labelId="month-dd"
                 id="month-dd"
@@ -102,7 +115,7 @@ const SalesOverview = () => {
                 <MenuItem value={2}>April 2023</MenuItem>
                 <MenuItem value={3}>May 2023</MenuItem>
             </Select>
-        }>
+        } */>
             <Chart
                 options={optionscolumnchart}
                 series={seriescolumnchart}

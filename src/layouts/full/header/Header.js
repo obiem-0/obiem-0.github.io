@@ -43,7 +43,7 @@ const Header = (props) => {
           <IconMenu width="20" height="20" />
         </IconButton>
 
-
+{/* 
         <IconButton
           size="large"
           aria-label="show 11 new notifications"
@@ -61,10 +61,20 @@ const Header = (props) => {
           </Badge>
 
         </IconButton>
+      */}
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center">
-          <Button variant="contained" color="primary"  target="_blank" href="https://adminmart.com/product/modernize-react-mui-dashboard-template/">
-            Upgrade to Pro
+          <Button variant="contained" color="primary"  target="_blank" href="https://www.linkedin.com/in/obi-emuwa">
+            Linkedin
+          </Button>
+          <Button variant="contained" color="secondary"  target="_blank" href="mailto:emuwa.obi@gmail.com">
+            Email
+          </Button>
+          <Button variant="contained" color="warning"  target="_blank" href="https://discordapp.com/users/emuwa.obi">
+            Discord
+          </Button>
+          <Button variant="contained" color="success"  target="_blank" href="https://github.com/obiem">
+            Github
           </Button>
           <Profile />
         </Stack>

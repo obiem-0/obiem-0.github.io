@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 import Header from './header/Header';
 import Sidebar from './sidebar/Sidebar';
+import Footer from './footer/Footer';
 
 const MainWrapper = styled('div')(() => ({
   display: 'flex',
@@ -55,6 +56,7 @@ const FullLayout = () => {
           maxWidth: '1200px',
         }}
         >
+       
           {/* ------------------------------------------- */}
           {/* Page Route */}
           {/* ------------------------------------------- */}
@@ -64,7 +66,8 @@ const FullLayout = () => {
           {/* ------------------------------------------- */}
           {/* End Page */}
           {/* ------------------------------------------- */}
-        </Container>
+        </Container>  
+         <Footer></Footer>
       </PageWrapper>
     </MainWrapper>
   );

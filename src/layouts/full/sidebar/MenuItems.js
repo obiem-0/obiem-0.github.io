@@ -17,6 +17,22 @@ const Menuitems = [
     href: '/dashboard',
   },
   {
+    id: uniqueId(),
+    title: 'About Me',
+    icon: IconAperture,
+    href: '/aboutme',
+  }, 
+  {
+    navlabel: true,
+    subheader: 'Projects',
+  },
+  {
+    id: uniqueId(),
+    title: 'Order Scheduling',
+    icon: IconAperture,
+    href: '/ordersched',
+  }
+ /* {
     navlabel: true,
     subheader: 'Utilities',
   },
@@ -63,7 +79,7 @@ const Menuitems = [
     title: 'Sample Page',
     icon: IconAperture,
     href: '/sample-page',
-  },
+  }, */
 ];
 
 export default Menuitems;

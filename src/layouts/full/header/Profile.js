@@ -26,6 +26,8 @@ const Profile = () => {
 
   return (
     <Box>
+
+      
       <IconButton
         size="large"
         aria-label="show 11 new notifications"
@@ -48,9 +50,12 @@ const Profile = () => {
           }}
         />
       </IconButton>
+
+
       {/* ------------------------------------------- */}
       {/* Message Dropdown */}
       {/* ------------------------------------------- */}
+  {/*   
       <Menu
         id="msgs-menu"
         anchorEl={anchorEl2}
@@ -88,7 +93,9 @@ const Profile = () => {
             Logout
           </Button>
         </Box>
-      </Menu>
+      </Menu> */}
+
+
     </Box>
   );
 };
