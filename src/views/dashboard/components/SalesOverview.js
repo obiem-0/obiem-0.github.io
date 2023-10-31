@@ -92,12 +92,12 @@ const SalesOverview = () => {
     };
     const seriescolumnchart = [
         {
-            name: 'Earnings this month',
-            data: [355, 390, 300, 350, 390],
+           name: '',
+            data: [70, 75, 80, 85, 90],
         },
         {
-            name: 'Expense this month',
-            data: [280, 250, 325, 215, 250],
+           name: '',
+            data: [74, 79, 82, 84,  95],
         },
     ];
 

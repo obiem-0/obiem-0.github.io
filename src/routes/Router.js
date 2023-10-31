@@ -10,6 +10,7 @@ const BlankLayout = Loadable(lazy(() => import('../layouts/blank/BlankLayout')))
 const Dashboard = Loadable(lazy(() => import('../views/dashboard/Dashboard')))
 const AboutMe = Loadable(lazy(() => import('../views/aboutme/AboutMe')))
 const RecipeRecom = Loadable(lazy(() => import('../views/otherpages/RecipeRecom')))
+const Socialify = Loadable(lazy(() => import('../views/otherpages/Socialify')))
 const RoleDescription = Loadable(lazy(() => import('../views/roledescription/RoleDescription')))
 const SamplePage = Loadable(lazy(() => import('../views/sample-page/SamplePage')))
 const Icons = Loadable(lazy(() => import('../views/icons/Icons')))
@@ -27,7 +28,8 @@ const Router = [
       { path: '/', element: <Navigate to="/dashboard" /> },
       { path: '/dashboard', exact: true, element: <Dashboard /> },
       { path: '/aboutme', exact: true, element: <AboutMe /> },
-      { path: '/otherpages', exact: true, element: <RecipeRecom /> },
+      { path: '/socialify', exact: true, element: <Socialify /> },
+      { path: '/reciperecom', exact: true, element: <RecipeRecom /> },
       { path: '/roledescription', exact: true, element: <RoleDescription /> },
       { path: '/sample-page', exact: true, element: <SamplePage /> },
       { path: '/icons', exact: true, element: <Icons /> },

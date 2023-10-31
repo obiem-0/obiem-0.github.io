@@ -30,8 +30,17 @@ const Menuitems = [
     id: uniqueId(),
     title: 'Order Scheduling',
     icon: IconAperture,
-    href: '/ordersched',
-  }
+    href: 'https://github.com/obiem-0/Portfolio/tree/main/Order_Scheduler',
+  },
+  {
+  id: uniqueId(),
+  title: 'Socialify',
+  icon: IconAperture,
+  //href: '/socialify',
+  href: 'https://github.com/obiem-0/Portfolio/tree/main/Socialify',
+},
+
+
  /* {
     navlabel: true,
     subheader: 'Utilities',

@@ -6,7 +6,7 @@ import DashboardCard from '../../components/shared/DashboardCard';
 
 const roledescription = () => {
   return (
-    <PageContainer title="Role Description" description="Get to know me">
+    <PageContainer title="Role Description">
 
       <DashboardCard 
       // title="About Me"

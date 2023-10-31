@@ -65,9 +65,7 @@ const Career = () => {
                     <TableHead>
                         <TableRow>
                             <TableCell>
-                                <Typography variant="subtitle2" fontWeight={600}>
-                                    ID
-                                </Typography>
+                               
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
@@ -93,7 +91,12 @@ const Career = () => {
                     </TableHead>
                     <TableBody>
                         {items.map((item) => (
-                            <TableRow key={item.name}>
+                            
+                            <TableRow key={item.name} sx={{
+                                verticalAlign: "top",
+                                borderBottom: "2px solid #f6f5f5"
+                                
+                            }}>
                                 <TableCell>
                                     <Typography
                                         sx={{
@@ -153,6 +156,7 @@ alignItems: "flex-start", //
                                 }}>
                                     <Typography variant="h7">{item.budget}</Typography>
                                 </TableCell>
+                             
                             </TableRow>
                         ))}
                     </TableBody>

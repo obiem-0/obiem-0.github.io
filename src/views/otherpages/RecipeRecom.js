@@ -20,7 +20,7 @@ const reciperecom = () => {
             <p>The Data-driven Recipe Recommender is a project that combines the power of Python, and SQL database, and React.js to provide personalized recipe recommendations based on your preferences and culinary interests.</p>
 
             <br/>
-            <h3 style="color: darkgrey; margin-bottom: 10px;">Overview</h3>
+            <h3 style={{color: 'darkgrey', marginbottom: '10px'}}>Overview</h3>
 
 
         <p>The main goal is to create a data-driven platform that assists users in discovering exciting and delicious recipes tailored to their unique tastes. To achieve this, we have incorporated the following technologies:</p>
@@ -32,7 +32,7 @@ const reciperecom = () => {
           <li>React.js: Creates an intuitive and user-friendly front-end interface to interact with the recommendation engine.</li>
         </ul>
         
-        <br/><h3 style="color: darkgrey; margin-bottom: 10px;">How It Works</h3>
+        <br/><h3 style={{color: 'darkgrey', marginbottom: '10px'}}>How It Works</h3>
 
         <p>The Data-driven Recipe Recommender operates in three main steps:</p>
         <ol>
@@ -47,7 +47,7 @@ const reciperecom = () => {
  
           </div>
 
-<h3 style="margin-bottom: 10px;">Four Parts</h3>
+<h3 class="mb-10" >Four Parts</h3>
 <div class="row">
 
     <div class="col-12">
@@ -97,17 +97,6 @@ const reciperecom = () => {
     </div>
 
 </div>
-
-<div class="card">
-          
-  <div class="card-body">
-    <h3>Conclusion</h3>
-    <p>For any questions or inquiries, please contact us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
-    <p>The Data-driven Recipe Recommender brings together the best of Python, SQL database, and React.js to delight food enthusiasts with personalized recipe recommendations. Embrace this culinary adventure, and let our platform cater to your taste buds!</p>
-</div>
-        </div>
-
-
 
 </Typography>
 
