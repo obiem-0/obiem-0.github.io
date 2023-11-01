@@ -4,6 +4,8 @@ import {
 
 import { uniqueId } from 'lodash';
 
+const start = "https://github.com/obiem-0";
+
 const Menuitems = [
   {
     navlabel: true,
@@ -30,14 +32,26 @@ const Menuitems = [
     id: uniqueId(),
     title: 'Order Scheduling',
     icon: IconAperture,
-    href: 'https://github.com/obiem-0/Portfolio/tree/main/Order_Scheduler',
+    href:  start & '/Portfolio/tree/main/Order_Scheduler',
   },
   {
   id: uniqueId(),
   title: 'Socialify',
   icon: IconAperture,
   //href: '/socialify',
-  href: 'https://github.com/obiem-0/Portfolio/tree/main/Socialify',
+  href: start & '/Portfolio/tree/main/Socialify',
+},
+{
+  id: uniqueId(),
+  title: 'Python Snippets',
+  icon: IconAperture,
+  href: start & '/Portfolio/tree/main/Python%20Snippets%20',
+},
+{
+  id: uniqueId(),
+  title: 'Jup Demo',
+  icon: IconAperture,
+  href: start & '/jup_demo/lab/index.html',
 },
 
 
