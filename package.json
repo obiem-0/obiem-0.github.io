@@ -1,8 +1,8 @@
 {
-  "name": "modernize",
+  "name": "Obi's Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alfa2267.github.io",
+  "homepage": "https://obiem-0.github.io",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",

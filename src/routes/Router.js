@@ -12,6 +12,7 @@ const AboutMe = Loadable(lazy(() => import('../views/aboutme/AboutMe')))
 const RecipeRecom = Loadable(lazy(() => import('../views/otherpages/RecipeRecom')))
 const Socialify = Loadable(lazy(() => import('../views/otherpages/Socialify')))
 const RoleDescription = Loadable(lazy(() => import('../views/roledescription/RoleDescription')))
+const PythonSnippets = Loadable(lazy(() => import('../views/otherpages/PythonSnippets')))
 const SamplePage = Loadable(lazy(() => import('../views/sample-page/SamplePage')))
 const Icons = Loadable(lazy(() => import('../views/icons/Icons')))
 const TypographyPage = Loadable(lazy(() => import('../views/utilities/TypographyPage')))
@@ -31,6 +32,7 @@ const Router = [
       { path: '/socialify', exact: true, element: <Socialify /> },
       { path: '/reciperecom', exact: true, element: <RecipeRecom /> },
       { path: '/roledescription', exact: true, element: <RoleDescription /> },
+      { path: '/pythonsnippets', exact: true, element: <PythonSnippets /> },
       { path: '/sample-page', exact: true, element: <SamplePage /> },
       { path: '/icons', exact: true, element: <Icons /> },
       { path: '/ui/typography', exact: true, element: <TypographyPage /> },

@@ -8,9 +8,7 @@ const aboutme = () => {
   return (
     <PageContainer title="About Me" description="Get to know me">
 
-      <DashboardCard 
-      // title="About Me"
-      >
+      <DashboardCard>
 
         <Typography>
           

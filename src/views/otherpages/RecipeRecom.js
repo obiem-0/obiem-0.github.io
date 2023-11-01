@@ -8,9 +8,7 @@ const reciperecom = () => {
   return (
     <PageContainer title="Recipe Recommender">
 
-      <DashboardCard 
-      // title="About Me"
-      >
+      <DashboardCard>
 
         <Typography>
 
@@ -65,7 +63,7 @@ const reciperecom = () => {
                   <div class="code_section">
   
                     <iframe
-                    src="../jup_demo/retro/notebooks/?path=recipe-tracker.ipybn"
+                    src="https://github.com/jup_demo/retro/notebooks/?path=recipe-tracker.ipybn"
                     width="100%"
                     height="100%"> </iframe>
                   

@@ -32,27 +32,21 @@ const Menuitems = [
     id: uniqueId(),
     title: 'Order Scheduling',
     icon: IconAperture,
-    href:  start & '/Portfolio/tree/main/Order_Scheduler',
+    href:  start + '/Portfolio/tree/main/Order_Scheduler',
   },
   {
   id: uniqueId(),
   title: 'Socialify',
   icon: IconAperture,
   //href: '/socialify',
-  href: start & '/Portfolio/tree/main/Socialify',
+  href: start + '/Portfolio/tree/main/Socialify',
 },
 {
   id: uniqueId(),
   title: 'Python Snippets',
   icon: IconAperture,
-  href: start & '/Portfolio/tree/main/Python%20Snippets%20',
-},
-{
-  id: uniqueId(),
-  title: 'Jup Demo',
-  icon: IconAperture,
-  href: start & '/jup_demo/lab/index.html',
-},
+  href: '/pythonsnippets',
+}
 
 
  /* {

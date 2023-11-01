@@ -8,9 +8,7 @@ const roledescription = () => {
   return (
     <PageContainer title="Role Description">
 
-      <DashboardCard 
-      // title="About Me"
-      >
+      <DashboardCard>
 
         <Typography>
           
