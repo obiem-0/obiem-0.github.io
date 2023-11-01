@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkObi_s_Portfolio=self.webpackChunkObi_s_Portfolio||[]).push([[900],{9900:function(e,n,r){r.r(n);var s=r(8467),t=r(6417);n.default=function(){return(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(s.j3,{})})}}}]);
